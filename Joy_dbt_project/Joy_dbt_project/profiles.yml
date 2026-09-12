@@ -1,0 +1,11 @@
+Joy_dbt_project:
+  outputs:
+    dev:
+      catalog: dbt_dev
+      host: dbc-212968b5-8dc8.cloud.databricks.com
+      http_path: /sql/1.0/warehouses/d1f22b7cb91c9156
+      schema: default
+      threads: 1
+      token: dapibc1d729e37fe1526bbc03d2d0c9e606c
+      type: databricks
+  target: dev

@@ -1,0 +1,23 @@
+version : 2
+
+models:
+    - name: bronze_sale
+      configuration:
+        materialized: view
+      columns:
+      - name: sales_id
+        data_tests:
+          - unique
+          - not_null  
+    
+    - name: bronze_customer
+      configuration:
+        materialized: view
+      columns:
+      - name: customer_code
+        data_tests:
+          - unique
+          - not_null
+
+
+   

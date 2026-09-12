@@ -1,0 +1,21 @@
+
+    
+    
+    
+    create  table `dbt_dev`.`bronze`.`lookup` (`customer_id` bigint ,`customer_name` string ,`customer_email` string ,`customer_phone` string )
+    
+  using delta
+    
+    
+    
+    
+    
+  ;
+    -- dbt seed --
+    
+          insert overwrite `dbt_dev`.`bronze`.`lookup` values
+          (%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s)
+      
+
+;
+  
